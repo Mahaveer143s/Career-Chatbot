@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Career Counseling Chatbot</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body style="background:url(/bg-main.jpg);background-size: cover;background-repeat: no-repeat;">
+  <!-- Chat Icon -->
+  <div id="chat-icon" class="chat-icon">
+    <img src="ai-bot.png" alt="AI Icon">
+  </div>
+
+  <!-- Chat Window -->
+  <div id="chat-container" class="chat-container hidden">
+    <div class="chat-header">
+      <img src="ai-bot.png"  alt="AI Logo" class="ai-logo">
+      <h1>Career Counseling Chatbot</h1>
+    </div>
+    <div id="chat-box" class="chat-box">
+      <div class="message bot">Ask any career-related questions!</div>
+      <div class="quick-options">
+        <button class="quick-btn">How to become a full stack developer?</button>
+        <button class="quick-btn">What to do after my degree?</button>
+        <button class="quick-btn">Best tech skills to learn in 2024?</button>
+        <button class="quick-btn">How to write a great resume?</button>
+        <button class="quick-btn">Tips for career growth?</button>
+      </div>
+    </div>
+    <div class="chat-input">
+      <div class="input-options">
+        <label for="image-input" style="font-size: 30px;">📷</label>
+        <input type="file" id="image-input" accept="image/*" hidden>
+        <button id="voice-btn">🎤</button>
+      </div>
+      <input type="text" id="user-input" placeholder="Type your question here...">
+      <button id="send-btn">Send</button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/tesseract.js/dist/tesseract.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

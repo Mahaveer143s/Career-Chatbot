@@ -1,0 +1,173 @@
+/* Additional styles for input options */
+.input-options {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 10px;
+  }
+  
+  .input-options label {
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  #voice-btn {
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #voice-btn:hover {
+    color: #0078D4;
+  }
+
+  /* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+  }
+  
+  /* Chat Icon */
+  .chat-icon {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .chat-icon img {
+    width: 180px;
+    height: 170px;
+  }
+  
+  /* Chat Container */
+  .chat-container {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 30rem;
+    height: 37rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .chat-container.hidden {
+    display: none;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  /* Chat Header */
+  .chat-header {
+    background: #0078D4;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .chat-header .ai-logo {
+    width: 100px;
+    height: 80px;
+    margin-right: 5px;
+  }
+  
+  /* Chat Box */
+  .chat-box {
+    flex-grow: 1;
+    padding: 10px;
+    overflow-y: auto;
+    background: #f9f9f9;
+  }
+  
+  .message {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .message.user {
+    background: #d1e8ff;
+    text-align: right;
+  }
+  
+  .message.bot {
+    background: #f4f4f9;
+  }
+  
+  .typing {
+    color: #444;
+    font-style: italic;
+  }
+  
+  /* Quick Options */
+  .quick-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  
+  .quick-btn {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 14px;
+    background: #0078D4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .quick-btn:hover {
+    background: #005bb5;
+  }
+  
+  /* Chat Input */
+  .chat-input {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+  }
+  
+  .chat-input input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .chat-input button {
+    margin-left: 10px;
+    padding: 10px 15px;
+    font-size: 16px;
+    background: #0078D4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  
